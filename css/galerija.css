@@ -1,0 +1,157 @@
+    
+    
+    body {
+        margin: 0;
+        background-image: url("../slike/lampa.png");
+    }
+    
+    .navbar {
+        background: rgb(19, 16, 16);
+        display: grid;
+        grid-template-columns: [firstc] auto [secondc] auto [thirdc] auto [fourthc] auto [fifthc] auto [sixthc] auto [seventhc] auto [endc];
+        grid-template-rows: [firstr] 7px [secondr] 45px [thirdr] auto [endr];
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .igra {
+        grid-column: secondc/thirdc;
+        grid-row: thirdr/thirdr;
+    }
+    
+    .soba {
+        grid-column: thirdc/fourthc;
+        grid-row: thirdr/endr;
+    }
+    
+    .home {
+        grid-column: fourthc/fifthc;
+        grid-row: secondr/endr;
+        width: 60% center;
+        
+    }
+    
+    .gal {
+        grid-column: fifthc/sixthc;
+        grid-row: thirdr/endr;
+    }
+    
+    .kont {
+        grid-column: sixthc/seventhc;
+        grid-row: thirdr/endr;
+    }
+    
+    .navbar a{
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: rgb(167, 8, 8);
+        border: 2px solid rgb(0, 0, 0);
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+      }
+    
+      .navbar a span{
+        position: relative;
+        z-index: 2;
+      }
+    
+      .navbar a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgb(167, 8, 8);
+        transition: all .35s;
+      }
+      
+      .navbar a:hover{
+        color: black;
+      }
+      
+      .navbar a:hover:after{
+        width: 100%;
+      }
+
+
+
+
+
+    .slideshow1 {
+      max-width: 90%;
+      max-height: 40%;
+      position: relative;
+      margin: auto;
+    }
+    
+    .prvaSoba {
+      display: none;
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .dugmici {
+      margin-bottom: 20px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(138, 120, 120);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #661313;
+    }
+    
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }

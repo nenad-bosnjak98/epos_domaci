@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.navbar {
+    background: rgb(65,62,62, 0.5);
+    display: grid;
+    grid-template-columns: [firstc] auto [secondc] auto [thirdc] auto [fourthc] auto [fifthc] auto [sixthc] auto [seventhc] auto [endc];
+    grid-template-rows: [firstr] 10px [secondr] 45px [thirdr] auto [endr];
+    justify-items: center;
+    position: sticky;
+    height: 138px;
+    width: 100%;
+}
+
+.igra {
+    grid-column: secondc/thirdc;
+    grid-row: thirdr/thirdr;
+}
+
+.soba {
+    grid-column: thirdc/fourthc;
+    grid-row: thirdr/endr;
+}
+
+.home {
+    grid-column: fourthc/fifthc;
+    grid-row: secondr/endr;
+    width: 60% center;
+    
+}
+
+.gal {
+    grid-column: fifthc/sixthc;
+    grid-row: thirdr/endr;
+}
+
+.kont {
+    grid-column: sixthc/seventhc;
+    grid-row: thirdr/endr;
+}
+
+a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(167,8,8);
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: black;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+.main-nav>ul {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 390px 220px 230px 240px 253px;
+    list-style-type: none;
+    color: rgb(102,6,6);
+}
+
+.main-nav>ul>li{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167,8,8);
+}
+
+#wrap{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 4em  50px auto;
+    background: url("../slike/lampa.png");
+}
+
+header {
+    background: rgb(29, 28, 28, 0);
+    color: rgb(105,105,105,0.3);
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    padding: 20px 5px 30px 10px;
+    color: rgb(170,8,8)
+}
+
+header h1 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    padding: 30px 0 8px 0;
+    text-decoration-style: double;
+}
+
+
+#sredina {
+    display: grid;
+    grid-row-gap: 7%;
+    grid-template-rows: [prva] 20% [druga] 20% [treca] 20% [cetvta] 20% [peta] ;
+    place-content: center center;
+    margin: 60px 30px 50px 20px;
+    color: rgb(136,127,127);
+    padding: 40px 50px 10px 10px;
+}
+
+.red1 {
+    display: grid;
+    grid-template-columns: [prva] 20% [druga] auto [treca];
+    grid-gap: 8%;
+    padding: 0 0 0 50px;
+}
+
+.slika {
+    width: 280px;
+    height: 200px;
+}
+
+.text1 {
+    padding: 10px 0 10px 0;
+}
+
+.red2 {
+    display: grid;
+    grid-template-columns: [prva] auto [druga] 20% [treca];
+    grid-gap: 2%;
+    padding: 0 80px 0 50px;
+}
+
+h2 {
+    color: rgb(170,8,8);
+}
+
+h2:hover {
+    color: rgb(121,5,5);
+}
+
+
+
+

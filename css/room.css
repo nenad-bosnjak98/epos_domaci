@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background: rgb(19, 16, 16);
+    display: grid;
+    grid-template-columns: [firstc] auto [secondc] auto [thirdc] auto [fourthc] auto [fifthc] auto [sixthc] auto [seventhc] auto [endc];
+    grid-template-rows: [firstr] 7px [secondr] 45px [thirdr] auto [endr];
+    justify-items: center;
+    width: 100%;
+}
+
+.igra {
+    grid-column: secondc/thirdc;
+    grid-row: thirdr/thirdr;
+}
+
+.soba {
+    grid-column: thirdc/fourthc;
+    grid-row: thirdr/endr;
+}
+
+.home {
+    grid-column: fourthc/fifthc;
+    grid-row: secondr/endr;
+    width: 60% center;
+    
+}
+
+.gal {
+    grid-column: fifthc/sixthc;
+    grid-row: thirdr/endr;
+}
+
+.kont {
+    grid-column: sixthc/seventhc;
+    grid-row: thirdr/endr;
+}
+
+
+
+.frame2 {
+  margin-bottom: -10px;
+}
+
+.navbar a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(167, 8, 8);
+    border: 2px solid black;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  .navbar a span{
+    position: relative;
+    z-index: 2;
+  }
+
+  .navbar a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(167, 8, 8);
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: black;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(197, 176, 176);
+    grid-column: treca/cetvrta;
+    grid-row: drugarow/trecarow;
+    justify-self: center;
+  }
+
+  h3 {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(197, 176, 176);
+    grid-column: treca/cetvrta;
+    grid-row: trecarow/cetvrtarow;
+    justify-self: center;
+  }
+
+  .hell {
+    background-color: black;
+    background-image: url("../pics/splatter.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: [prva] auto [druga] auto [treca] auto [cetvrta] auto [peta] auto [endcol];
+    grid-template-rows: [prvarow] 450px [drugarow] 50px [trecarow] 200px [cetvrtarow] auto [petarow];
+  }
+
+  .date {
+    grid-column: prva/druga;
+    grid-row: prvarow/drugarow;
+    color: aquamarine;
+    padding-top: 20px;
+    margin-left: 10px;
+  }
+
+  .video {
+    margin-bottom: -10px;
+  }
+
+  .soc_mreze {
+    display: grid;
+    grid-template-columns: [firstc] auto [secondc] 70px [thirdc] 70px [fourthc] 70px [fifthc] 70px [sixthc] auto [endcolm];
+    grid-template-rows: [first] 8px [second] 50px [endrow];
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+
+.facebook {
+    grid-column: secondc/thirdc;
+    grid-row: second/endrow;
+    justify-self: center;
+    color: powderblue;
+}
+
+.instagram {
+    grid-column: thirdc/fourthc;
+    grid-row: second/endrow;
+    justify-self: center;
+}
+
+.twitter {
+    grid-column: fourthc/fifthc;
+    grid-row: second/endrow;
+    justify-self: center;
+}
+
+.youtube {
+    grid-column: fifthc/sixthc;
+    grid-row: second/endrow;
+    justify-self: center;
+}
+
+
+
+  
+  
+ 
+  
+
+  
+  
+
+ 
